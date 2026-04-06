@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Satisfy&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    @apply bg-background text-on-background antialiased overflow-x-hidden;
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+  }
+
+  ::selection {
+    @apply bg-primary/30 text-white;
+  }
+}
+
+/* Custom Scrollbar for premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-outline rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-on-surface-variant;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Glassmorphism utility classes */
+.glass {
+  @apply bg-white/70 backdrop-blur-md border border-zinc-200 hover:border-zinc-300 transition-colors duration-300 shadow-none;
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-zinc-200 hover:border-zinc-300 transition-colors duration-300 shadow-none;
+}
+
+/* Text Gradients */
+.text-gradient {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary;
+}
+
+/* Subtle glow effects */
+.glow-effect {
+  position: relative;
+}
+.glow-effect::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(to bottom right, theme('colors.primary'), theme('colors.secondary'));
+  border-radius: inherit;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.glow-effect:hover::before {
+  opacity: 1;
+}

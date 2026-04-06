@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>InterviewAI - Master Your Next Big Career Move</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#ffd6f9",
+                    "on-tertiary-fixed-variant": "#7e0088",
+                    "on-secondary-fixed": "#37013b",
+                    "secondary": "#844983",
+                    "on-tertiary-fixed": "#37003b",
+                    "background": "#fff8f7",
+                    "surface-dim": "#ffcdd7",
+                    "surface-container": "#ffe8ec",
+                    "inverse-surface": "#66002c",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "primary": "#0e1010",
+                    "on-surface": "#3f0018",
+                    "secondary-container": "#ffb7fa",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#f6aff1",
+                    "inverse-on-surface": "#ffecee",
+                    "outline": "#84727a",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#ffa9fc",
+                    "on-error": "#ffffff",
+                    "on-surface-variant": "#52434a",
+                    "on-primary-container": "#8b8c8c",
+                    "tertiary": "#230026",
+                    "tertiary-container": "#46004c",
+                    "on-tertiary-container": "#d459d9",
+                    "on-secondary-container": "#7c427c",
+                    "on-primary-fixed": "#1a1c1c",
+                    "on-secondary-fixed-variant": "#69316a",
+                    "inverse-primary": "#c6c6c7",
+                    "error": "#ba1a1a",
+                    "on-tertiary": "#ffffff",
+                    "on-background": "#3f0018",
+                    "secondary-fixed": "#ffd6f9",
+                    "error-container": "#ffdad6",
+                    "surface-container-low": "#fff0f1",
+                    "surface-variant": "#ffd9e0",
+                    "surface-container-high": "#ffe1e6",
+                    "surface-tint": "#5d5f5f",
+                    "surface-container-highest": "#ffd9e0",
+                    "surface-bright": "#fff8f7",
+                    "on-primary-fixed-variant": "#454747",
+                    "surface": "#fff8f7",
+                    "primary-fixed": "#e2e2e2",
+                    "primary-container": "#232525",
+                    "primary-fixed-dim": "#c6c6c7",
+                    "outline-variant": "#d6c1ca"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800 shadow-sm">
+<nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="text-2xl font-bold tracking-tighter text-zinc-900 dark:text-zinc-50">InterviewAI</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-fuchsia-700 dark:text-fuchsia-400 border-b-2 border-fuchsia-700 dark:border-fuchsia-400 pb-1 hover:text-fuchsia-600 dark:hover:text-fuchsia-300 transition-colors duration-200 ease-in-out font-inter antialiased" href="#">Features</a>
+<a class="text-zinc-600 dark:text-zinc-400 font-medium hover:text-fuchsia-600 dark:hover:text-fuchsia-300 transition-colors duration-200 ease-in-out font-inter antialiased" href="#">Methodology</a>
+<a class="text-zinc-600 dark:text-zinc-400 font-medium hover:text-fuchsia-600 dark:hover:text-fuchsia-300 transition-colors duration-200 ease-in-out font-inter antialiased" href="#">Pricing</a>
+<a class="text-zinc-600 dark:text-zinc-400 font-medium hover:text-fuchsia-600 dark:hover:text-fuchsia-300 transition-colors duration-200 ease-in-out font-inter antialiased" href="#">About</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="px-5 py-2 text-zinc-600 dark:text-zinc-400 font-medium hover:text-fuchsia-600 transition-colors">Login</button>
+<button class="px-6 py-2 bg-on-tertiary-fixed-variant text-white rounded-lg font-semibold hover:bg-tertiary-container transition-all shadow-md">Get Started</button>
+</div>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-16 pb-24 md:pt-32 md:pb-40">
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container rounded-full text-on-tertiary-fixed-variant font-medium text-sm">
+<span class="material-symbols-outlined text-sm">auto_awesome</span>
+                        Next-Gen Interview Coaching
+                    </div>
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface leading-[1.1]">
+                        Master Your Next <span class="text-on-tertiary-fixed-variant">Big Career Move.</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant leading-relaxed max-w-xl">
+                        Experience hyper-realistic simulations powered by proprietary micro-expression analysis. Decode your performance before the real interview begins.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="px-8 py-4 bg-tertiary text-white rounded-lg font-bold text-lg hover:bg-on-tertiary-container transition-all shadow-xl shadow-tertiary/10">Start Free Mock Interview</button>
+<button class="px-8 py-4 bg-white border border-outline-variant text-on-surface rounded-lg font-bold text-lg inline-flex items-center gap-2 hover:bg-surface-container-low transition-all">
+<span class="material-symbols-outlined">play_circle</span>
+                            Watch Demo
+                        </button>
+</div>
+</div>
+<div class="relative">
+<div class="bg-white rounded-2xl shadow-2xl overflow-hidden border border-outline-variant/30">
+<img alt="AI Interview Analysis Interface" class="w-full h-auto" data-alt="Professional dashboard displaying real-time video interview with AI overlays showing facial expression analysis and biometric performance data visualizations" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgqss_yPF8ytg6Q7fofC7wB7r0n7TIOVV3oVcfkEbJO1oAyWxrJYT53H8IFJhylTsEWMsbimYnuHZgCTa9J_zZdJOIYjowQ7wFSFEx7LHoNpcW1juTkBLM0J0tQGMxbPBy3eh0K9iFVql2HjsWAynZjA2pREIf80eOjGN0IGswNGd38RlfmaA6m5NSsZaTf4IJzDMKvESPszRZJSinkBTsQSeIOPFGFXUY0UZYOKZPyglzaJWPkSocQB7PuSUIKm2z_mmO_sQOLjRA"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-tertiary-fixed p-6 rounded-xl shadow-lg max-w-[200px]">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-on-tertiary-fixed-variant" style="font-variation-settings: 'FILL' 1;">analytics</span>
+<span class="font-bold text-on-tertiary-fixed">Confidence Score</span>
+</div>
+<div class="text-3xl font-extrabold text-on-tertiary-fixed-variant">92%</div>
+<div class="w-full bg-on-tertiary-fixed/20 h-2 rounded-full mt-2">
+<div class="bg-on-tertiary-fixed-variant h-full rounded-full" style="width: 92%"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Value Proposition: The Cognitive Sanctuary -->
+<section class="py-24 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-6">
+<div class="bg-secondary-container/20 rounded-3xl p-12 md:p-20 border border-secondary-container/30 relative overflow-hidden">
+<div class="grid md:grid-cols-2 gap-16 items-center relative z-10">
+<div>
+<h2 class="text-4xl font-bold tracking-tight text-on-secondary-container mb-6">The Cognitive Sanctuary</h2>
+<p class="text-xl text-on-surface-variant leading-relaxed">
+                                High-stress interviews trigger the primal fight-or-flight response. Our simulator provides a "Cognitive Sanctuary" — a zero-risk environment where you can safely rewire your neuro-responses through repetitive, AI-guided exposure.
+                            </p>
+<div class="mt-8 flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="font-semibold text-on-surface">Zero-Risk Psychological Safety</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">psychology</span>
+<span class="font-semibold text-on-surface">Neural Performance Rehearsal</span>
+</div>
+</div>
+</div>
+<div class="h-[400px] bg-secondary-fixed-dim rounded-2xl overflow-hidden shadow-inner">
+<img alt="High-Stress Performance Training" class="w-full h-full object-cover mix-blend-overlay" data-alt="Calm professional workspace with soft ambient lighting, representing a focused and safe environment for peak mental performance training" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD79P4rnhCnijAgvjNPYrCb40eZQ4s_6XKPzWPr_FYuAZ1VCKhaAGVfz79wh227kWLeTKEt8qir3hJQXYXbZn9J9yfg-pbjxaMWhPOR07wT5PYdlwCpzUJbX6WQR8o2fmdgof8ch5GEEe5mSr6xjs3tHKPYfc4P0FQ0q8Sl2G_jsOaeoEA9eNehQjXimR1oQV2fo5yTBVagOd6Z9TCabToGrM1ZBiHDIKh5ifM5OMrLE1z9xv7y6UIt-mcJEwLbDopRkhELpHW4_GOq"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Features: Precision Intelligence -->
+<section class="py-24">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold tracking-tight text-on-surface mb-4">Precision Intelligence</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Our multi-layered AI engine evaluates every nuance of your delivery to ensure you project competence and authority.</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Card 1 -->
+<div class="bg-white p-8 rounded-2xl border border-outline-variant hover:shadow-xl transition-all group">
+<div class="w-12 h-12 bg-tertiary-fixed rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-tertiary-fixed-variant">face</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface mb-3">Micro-Expression Analysis</h3>
+<p class="text-on-surface-variant">Detection of subtle facial cues that signal uncertainty or lack of confidence.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-white p-8 rounded-2xl border border-outline-variant hover:shadow-xl transition-all group">
+<div class="w-12 h-12 bg-secondary-fixed rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-secondary-fixed-variant">quick_phrases</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface mb-3">Real-Time Feedback</h3>
+<p class="text-on-surface-variant">Live coaching prompts as you speak to adjust tone, pace, and body language instantly.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-white p-8 rounded-2xl border border-outline-variant hover:shadow-xl transition-all group">
+<div class="w-12 h-12 bg-surface-variant rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-surface-variant">query_stats</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface mb-3">Performance Heatmaps</h3>
+<p class="text-on-surface-variant">Visual breakdowns of your energy levels and engagement throughout the interview.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-white p-8 rounded-2xl border border-outline-variant hover:shadow-xl transition-all group">
+<div class="w-12 h-12 bg-primary-fixed rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-primary-fixed-variant">insights</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface mb-3">Deep Dive Analytics</h3>
+<p class="text-on-surface-variant">Comprehensive reports comparing your performance against industry benchmarks.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof -->
+<section class="py-24 bg-on-primary-fixed">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-white mb-4">Trusted by Leaders at</h2>
+<div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-60 grayscale brightness-200">
+<div class="text-2xl font-black text-white italic">Google</div>
+<div class="text-2xl font-black text-white italic">AWS</div>
+<div class="text-2xl font-black text-white italic">VERCEL</div>
+<div class="text-2xl font-black text-white italic">Stripe</div>
+</div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-zinc-900 p-8 rounded-2xl border border-zinc-800">
+<div class="flex gap-1 text-tertiary-fixed mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-zinc-300 italic mb-6">"The micro-expression analysis caught habits I never knew I had. I walked into my Google interview with total calm."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-zinc-700 overflow-hidden">
+<img alt="Sarah J." class="w-full h-full object-cover" data-alt="Portrait of a smiling professional male in a clean studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAav9cINX5_hFakSniubxutnkJBDp6fh0wEG37bsui6XZxyr7RVdfLqeCTfLjnecVqqsau2a7VasvbUfHSsS-F2tLu-5omOxiOKgSd1rfCwkZT2quOHaUu34ms73hnWZHhjoAQVK6HRCEnhbn7kMduTukfzNRHSVFDtkliW5s3SxC0r5R2Cl-aqVLadRxetsTDpvWYgdStuPoKwbns8pdfh5Qjz88WWpxgHaSP3Zi3Rjt6yIK8FmAkt8jb3MNAvAq4QNH2cVxO_flO0"/>
+</div>
+<div>
+<div class="text-white font-bold">Marcus L.</div>
+<div class="text-zinc-500 text-sm">Product Manager @ Google</div>
+</div>
+</div>
+</div>
+<div class="bg-zinc-900 p-8 rounded-2xl border border-zinc-800">
+<div class="flex gap-1 text-tertiary-fixed mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-zinc-300 italic mb-6">"This isn't just a mock tool; it's a performance mirror. The heatmaps clearly showed where I was losing the interviewer's interest."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-zinc-700 overflow-hidden">
+<img alt="Elena R." class="w-full h-full object-cover" data-alt="Close-up portrait of a professional woman with a confident and friendly expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA98Hz5WbvMOCGRvQ3cgDI6bviaBG_5lIERmmJRxMWw9KkhQbaDriT1cAn_uIk1wKR-PIW1vOrvrq6BQK47fKraAKKK-xcMZ9-BwI2hyr4aTi_bAHCtks9zFQpM7Uu6w1N-sZPxO9iDXl3_JmJVnrKIrpp9pR44xmUyHlV0g-U7MuWIQTtDqVp__DV4HJx2acT0Y-fzfK0jyaWDYPGZcF6M3vl9Mqm8bc-gxtbmtEbP9h5qCSj9erUWumIOXlNFK7YsF34dW-s38T8s"/>
+</div>
+<div>
+<div class="text-white font-bold">Sarah T.</div>
+<div class="text-zinc-500 text-sm">Senior Dev @ Vercel</div>
+</div>
+</div>
+</div>
+<div class="bg-zinc-900 p-8 rounded-2xl border border-zinc-800">
+<div class="flex gap-1 text-tertiary-fixed mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-zinc-300 italic mb-6">"The real-time feedback on my pacing changed everything. I used to rush, now I command the conversation."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-zinc-700 overflow-hidden">
+<img alt="David K." class="w-full h-full object-cover" data-alt="Headshot of a middle-aged male professional looking determined and focused" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfAsvjvQi-RKEod0JUgXVDosX32mMHzRaCNVxuFgo56NExz3ZOwFXa4UXR7dCxZrmdoELUfyXX-ySIVu4cmJn8LgR6Nd-HV460HYXn1nQ2O0csVrHGAyuxXPsQUb77s_i4UmAWn0e7-Bs7FzPL_XPSE0PhaYAMJ2Xs07qjbsl8IJ0EWOt9KeoIuiRHbvcZcI9RZ-CIG1LqbtfF0k3FH3ax80U95-gYM8FtiGyeIoLTeFUhsvAUjgy20xIFh5A4LX6lrBoxUVObuwgd"/>
+</div>
+<div>
+<div class="text-white font-bold">James W.</div>
+<div class="text-zinc-500 text-sm">Solutions Architect @ AWS</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="py-24">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold tracking-tight text-on-surface mb-4">Simple, Transparent Pricing</h2>
+<p class="text-on-surface-variant">Invest in your career with plans that grow with you.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Free -->
+<div class="bg-white p-10 rounded-2xl border border-outline-variant flex flex-col">
+<div class="text-xl font-bold text-on-surface mb-2">Free</div>
+<div class="text-4xl font-extrabold text-on-surface mb-6">$0<span class="text-lg font-normal text-on-surface-variant">/mo</span></div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-green-600 text-sm">check_circle</span>
+                                2 Mock Interviews / Mo
+                            </li>
+<li class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-green-600 text-sm">check_circle</span>
+                                Basic AI Feedback
+                            </li>
+<li class="flex items-center gap-3 text-zinc-400">
+<span class="material-symbols-outlined text-sm">block</span>
+                                Micro-Expression Analysis
+                            </li>
+</ul>
+<button class="w-full py-3 rounded-lg border border-outline-variant font-bold hover:bg-surface-container-low transition-colors">Start for Free</button>
+</div>
+<!-- Pro -->
+<div class="bg-white p-10 rounded-2xl border-2 border-on-tertiary-fixed-variant flex flex-col relative scale-105 shadow-2xl">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-on-tertiary-fixed-variant text-white px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase">Most Popular</div>
+<div class="text-xl font-bold text-on-surface mb-2">Pro</div>
+<div class="text-4xl font-extrabold text-on-surface mb-6">$29<span class="text-lg font-normal text-on-surface-variant">/mo</span></div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3 text-on-surface font-medium">
+<span class="material-symbols-outlined text-on-tertiary-fixed-variant text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Unlimited Mock Interviews
+                            </li>
+<li class="flex items-center gap-3 text-on-surface font-medium">
+<span class="material-symbols-outlined text-on-tertiary-fixed-variant text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Full Micro-Expression Suite
+                            </li>
+<li class="flex items-center gap-3 text-on-surface font-medium">
+<span class="material-symbols-outlined text-on-tertiary-fixed-variant text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Custom Industry Questions
+                            </li>
+<li class="flex items-center gap-3 text-on-surface font-medium">
+<span class="material-symbols-outlined text-on-tertiary-fixed-variant text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Peer Benchmarking
+                            </li>
+</ul>
+<button class="w-full py-4 bg-on-tertiary-fixed-variant text-white rounded-lg font-bold shadow-lg shadow-tertiary/20 hover:brightness-110 transition-all">Get Pro Access</button>
+</div>
+<!-- Enterprise -->
+<div class="bg-white p-10 rounded-2xl border border-outline-variant flex flex-col">
+<div class="text-xl font-bold text-on-surface mb-2">Enterprise</div>
+<div class="text-4xl font-extrabold text-on-surface mb-6">Custom</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-green-600 text-sm">check_circle</span>
+                                Team Analytics Dashboard
+                            </li>
+<li class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-green-600 text-sm">check_circle</span>
+                                SSO &amp; Security Tools
+                            </li>
+<li class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-green-600 text-sm">check_circle</span>
+                                White-Label Options
+                            </li>
+</ul>
+<button class="w-full py-3 rounded-lg border border-outline-variant font-bold hover:bg-surface-container-low transition-colors">Contact Sales</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-24">
+<div class="max-w-7xl mx-auto px-6">
+<div class="bg-tertiary rounded-[2.5rem] p-12 md:p-24 text-center text-white relative overflow-hidden">
+<!-- Decor -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-on-tertiary-container/20 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
+<div class="relative z-10 max-w-3xl mx-auto">
+<h2 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-8">Ready to land your dream job?</h2>
+<p class="text-xl text-tertiary-fixed/80 mb-12">Join 50,000+ professionals who have used InterviewAI to master their performance and secure world-class roles.</p>
+<div class="flex flex-col md:flex-row justify-center items-center gap-6">
+<button class="px-10 py-5 bg-white text-tertiary rounded-xl font-extrabold text-xl hover:bg-surface-container-low transition-all shadow-xl">Get Started Now</button>
+<span class="text-tertiary-fixed/60 font-medium">No credit card required.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-zinc-50 dark:bg-zinc-900 w-full py-12 px-6 border-t border-zinc-200 dark:border-zinc-800">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="text-lg font-bold text-zinc-900 dark:text-zinc-100">InterviewAI</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-zinc-500 dark:text-zinc-400 text-sm font-inter hover:text-fuchsia-600 transition-opacity duration-200" href="#">Privacy Policy</a>
+<a class="text-zinc-500 dark:text-zinc-400 text-sm font-inter hover:text-fuchsia-600 transition-opacity duration-200" href="#">Terms of Service</a>
+<a class="text-zinc-500 dark:text-zinc-400 text-sm font-inter hover:text-fuchsia-600 transition-opacity duration-200" href="#">Security</a>
+<a class="text-zinc-500 dark:text-zinc-400 text-sm font-inter hover:text-fuchsia-600 transition-opacity duration-200" href="#">Contact Sales</a>
+</div>
+<div class="text-sm font-inter text-zinc-500 dark:text-zinc-400">© 2024 InterviewAI Simulator. All rights reserved.</div>
+</div>
+</footer>
+</body></html>
