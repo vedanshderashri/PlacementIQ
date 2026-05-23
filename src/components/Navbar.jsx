@@ -44,10 +44,10 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-3">
-          <Link to="/login" className="hidden md:block px-4 py-2 text-zinc-600 font-medium hover:text-zinc-900 transition-colors text-sm hover:bg-zinc-100 rounded-full">
+          <Link to="http://localhost:3000/login" className="hidden md:block px-4 py-2 text-zinc-600 font-medium hover:text-zinc-900 transition-colors text-sm hover:bg-zinc-100 rounded-full">
             Login
           </Link>
-          <Link to="/signup" className="flex items-center gap-2 px-5 py-2 bg-white text-zinc-900 text-sm rounded-full font-bold transition-all border border-zinc-200 shadow-sm hover:shadow hover:-translate-y-0.5 active:scale-95 duration-200">
+          <Link to="http://localhost:3000/signup" className="flex items-center gap-2 px-5 py-2 bg-white text-zinc-900 text-sm rounded-full font-bold transition-all border border-zinc-200 shadow-sm hover:shadow hover:-translate-y-0.5 active:scale-95 duration-200">
             Sign up
             <ArrowUpRight size={16} strokeWidth={2.5} />
           </Link>
