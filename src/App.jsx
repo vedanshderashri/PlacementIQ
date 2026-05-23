@@ -22,8 +22,8 @@ function App() {
         <div className="w-full flex-grow flex flex-col">
           <Routes>
             <Route path="/" element={<><Navbar /><Landing /></>} />
-            <Route path="/login" element={<><Navbar /><Login /></>} />
-            <Route path="/signup" element={<><Navbar /><SignUp /></>} />
+            <Route path="http://localhost:3000/login" element={<><Navbar /><Login /></>} />
+            <Route path="http://localhost:3000/signup" element={<><Navbar /><SignUp /></>} />
             <Route path="/interview" element={<InterviewRoom />} />
           </Routes>
         </div>
