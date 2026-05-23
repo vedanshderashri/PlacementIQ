@@ -27,7 +27,7 @@ export default function Navbar() {
           : 'bg-white/40 backdrop-blur-md border border-zinc-200/40'
       }`}>
         <Link to="/" className="text-xl font-headline font-extrabold tracking-tighter text-zinc-900 flex items-center gap-2">
-          <img src="/logo.png" alt="PlacementIQ Logo" className="w-8 h-8 rounded-lg object-contain mix-blend-multiply" />
+          <img src="/mockmate_logo.png" alt="PlacementIQ Logo" className="w-8 h-8 rounded-lg object-contain mix-blend-multiply" />
           PlacementIQ
         </Link>
         
