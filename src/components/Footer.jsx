@@ -39,7 +39,7 @@ export default function Footer() {
  <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
  <div className="flex items-center gap-2">
  <img src="/logo.png" alt="PlacementIQ Logo" className="w-8 h-8 rounded-xl object-contain drop-" />
- <span className="text-xl font-headline font-black text-on-surface tracking-tighter">PlacementIQ</span>
+ <span className="text-xl font-headline font-black text-on-surface tracking-tighter">Mockmate</span>
  </div>
  
  <div className="flex flex-wrap justify-center gap-8">
@@ -51,7 +51,7 @@ export default function Footer() {
  </div>
  
  <div className="text-sm font-semibold text-on-surface-variant">
- © {new Date().getFullYear()} PlacementIQ Simulator. All rights reserved.
+ © {new Date().getFullYear()} Mockmate . All rights reserved.
  </div>
  </div>
  </footer>
